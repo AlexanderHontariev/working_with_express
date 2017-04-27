@@ -1,0 +1,25 @@
+<script
+  src='https://code.jquery.com/jquery-3.2.1.min.js'
+  integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+  crossorigin='anonymous'></script>
+
+<form class='inputWrapper'>
+	<div><input type='text' name='name' placeholder='Enter name' /></div>
+	<div><input type='password' name='pass' placeholder='Enter password' /></div>
+	<button type='submit' id='sendData'>Нажать</button>
+</form>
+
+<script>
+
+$('.inputWrapper').send(function() {
+	$.ajax({
+		url: 'http://localhost:2999/sendData',
+		data: $(this).serialize(),
+       	cache: false,
+       	contentType: 'application/x-www-form-urlencoded',
+       	processData: false,
+		type: 'post'
+	});
+});
+
+</script>

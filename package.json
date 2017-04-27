@@ -1,0 +1,16 @@
+{
+  "name": "express-exam",
+  "version": "0.0.0",
+  "description": "пример работы с модулем express",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Alexander Hontariev",
+  "license": "ISC"
+}
