@@ -1,6 +1,8 @@
 var app = require('express')();
 var bodyParser = require('body-parser');
 
+// взято отсюдого
+/* http://stackoverflow.com/questions/5710358/how-to-retrieve-post-query-parameters */
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
